@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0px;
+}
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+/* header */
+.header{
+    position: sticky;
+    top:0;
+}
+.header .navbar-brand img {
+    width: 90px;
+}
+
+.header .navbar-nav .nav-item {
+    padding: 10px 10px;
+}
+
+.header .navbar-nav .nav-item .nav-link {
+    color: #000;
+    transition: all .2s ease-in-out;
+}
+
+.header .navbar-nav .nav-item .nav-link:hover {
+    color: #808080;
+    transition: all .2s ease-in-out;
+}
+
+/* search bar */
+.nav-right {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    width: 300px;
+    align-items: center;
+}
+
+.header .input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+.header .input-wrapper .input {
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+    background-color: transparent;
+    box-shadow: 0px 0px 3px #f3f3f3;
+    padding-right: 40px;
+    color: #000;
+}
+
+.header .input-wrapper .input::placeholder,
+.header .input-wrapper .input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
+.header .input-wrapper .input::placeholder {
+    color: #8f8f8f;
+}
+
+.header .input-wrapper .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: .2s linear;
+    fill: #000;
+}
+
+.header .input-wrapper .icon i {
+    font-size: 20px;
+}
+
+.header .input-wrapper .input.active {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #808080;
+    transition: all 500ms ease-in-out;
+    z-index: 1;
+}
+
+/* search bar end */
+
+/* login btn */
+.header .btn-group button {
+    border: none;
+    background-color: transparent;
+}
+
+.header .btn-group button i {
+    font-size: 20px;
+}
+
+/* login btn end */
+
+/* btn cart */
+.header .cart-btn .cart i {
+    color: #000;
+    font-size: 20px;
+}
+
+.header .btn-group .bars {
+    width: 20px;
+}
+
+.cart-btn {
+    margin-bottom: 0;
+}
+
+.header .cart-btn .cart p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    color: #000;
+    border-radius: 10px;
+}
+
+.cart-btn .cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 8px;
+}

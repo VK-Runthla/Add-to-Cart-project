@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another project</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <main class="main">
+    <!-- header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/Logo.png" alt="Logo">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">All services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Join us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contect us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Buy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <!-- search bar -->
+            <div class="search-bar ms-auto">
+              <div class="input-wrapper">
+                <button class="icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input placeholder="search.." class="input" name="text" type="text">
+              </div>
+            </div>
+            <!-- search bar end -->
+
+            <!-- cart btn -->
+            <ul class="cart-btn">
+              <li>
+                <a href="#" id="cart" class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></a>
+              </li>              
+            </ul>
+            <!-- cart btn end -->
+            <!-- login btn -->
+            <div class="btn-group dropstart">
+              <button type="button" class="p-2 ms-3" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-user user"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- section banner -->
+    <section class="banner">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 p-0">
+            <figure class="banner-img">
+              <img src="assets/images/banner-slider-1.png" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- product list -->
+    <div class="container">
+      <div id="productList"></div>
+      <div id="sideCart" class="slidebar">
+        <div class="head">
+          <p>My Cart</p>
+        </div>
+        <div id="cartItem">
+          Your cart is empty!
+        </div>
+        <div class="foot">
+          <h4>Total</h4>
+          <h3 id="total"></h3>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <!-- script's -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
